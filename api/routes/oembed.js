@@ -6,6 +6,7 @@ router.get("/oembed", (req, res) => {
     type: "photo",
     title: "POG SCREENSHOT",
     url: req.query.url,
+    thumbnail_url: req.query.url,
     width: 1980,
     length: 1080,
     provider_name: "xboxs.one",
