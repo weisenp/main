@@ -4,7 +4,7 @@ const requestImageSize = require("request-image-size");
 
 router.get("/oembed", (req, res) => {
   size = requestImageSize(req.query.url);
-  console.log(size.width);
+  console.log(size);
 
   res.json({
     type: "photo",
