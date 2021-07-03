@@ -2,9 +2,9 @@ const express = require("express");
 const router = express.Router();
 const requestImageSize = require("request-image-size");
 
-router.get("/oembed", (req, res) => {
-  size = requestImageSize(req.query.url);
-  console.log(size);
+router.get("/oembed", async (req, res) => {
+  size = await requestImageSize(req.query.url);
+  console.log(size.height);
 
   res.json({
     type: "photo",
