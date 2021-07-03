@@ -9,7 +9,6 @@ app.use(
 );
 
 app.use("/api", require("./routes/oembed"));
-app.use("/api", require("./routes/short"));
 
 app.listen(3000, () => {
   console.log("Server running on port 3000");
