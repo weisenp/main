@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chmodr": "^1.2.0",
     "express": "^4.17.1",
     "nanoid": "^3.1.23",
     "request-image-size": "^2.2.0"
