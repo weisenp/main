@@ -31,7 +31,7 @@ router.get("/short", (req, res) => {
                 res.send("failed to create index.js " + err);
               }
 
-              res.send(`https:/s.xboxs.one/${randomString}`);
+              res.send(`https://s.xboxs.one/${randomString}`);
             }
           );
         }
